@@ -13,13 +13,14 @@ public class Selenium {
         printPageTitle();
         printPageUrl();
         printWindowHandle();
-        openNewWindow();
+        openNewTab();
         navigateTo("https://fb.com");
         printWindowHandle();
 //        closeTab();
         waitForMs(5000);
 
-        closeWindow();
+        closeTab();
+        waitForMs(3000);
         closeWindow();
 //        waitForMs(5000);
 //        setWindowSize(430,932);
